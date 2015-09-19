@@ -19,5 +19,5 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
-  gem 'simplecove', :require => false 
+  gem 'simplecov', :require => false 
 end
