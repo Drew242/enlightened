@@ -10,7 +10,7 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: white;
     opacity: 0.9;
 }
 
@@ -36,7 +36,7 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: #3f603f;
 }
 
 a:hover,
@@ -62,7 +62,14 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #3f603f;
+  background-image: url("grass.jpg");
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white;
 }
 
 .bg-darkest-gray {
@@ -127,7 +134,7 @@ fieldset[disabled] .btn-primary.active {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #32CD32;
 }
 
 .btn-xl:hover,
@@ -135,9 +142,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: #32CD32;
     color: #fff;
-    background-color: #fec503;
+    background-color: #32CD32;
 }
 
 .btn-xl:active,
@@ -161,12 +168,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #32CD32;
+    background-color: #32CD32;
 }
 
 .btn-xl .badge {
-    color: #fed136;
+    color: #32CD32;
     background-color: #fff;
 }
 
@@ -323,6 +330,11 @@ header .intro-text .intro-heading {
 
 section {
     padding: 100px 0;
+}
+
+.green {
+  background-color: #222;
+  color: white;
 }
 
 section h2.section-heading {
@@ -494,7 +506,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #32CD32;
 }
 
 .timeline>li .timeline-image h4 {
