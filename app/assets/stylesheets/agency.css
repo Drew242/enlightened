@@ -647,6 +647,7 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
+    height: 20em;
     border: 7px solid #fff;
 }
 
@@ -814,6 +815,8 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content img {
+    height: 20em;
+    width: 20em;
     margin-bottom: 30px;
 }
 
