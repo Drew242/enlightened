@@ -18,6 +18,11 @@
         <li class="hidden">
           <a href="/"></a>
         </li>
+        <% if current_user %>
+        <li>
+          <%= link_to "Logged in as #{current_user.name}", dashboard_path %>
+        </li>
+        <% end %>
         <li>
           <a class="page-scroll" href="#services">About</a>
         </li>
