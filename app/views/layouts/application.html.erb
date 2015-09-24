@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Enlightened</title>
-  <%= stylesheet_link_tag    'application' %>
-  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
       <meta charset="utf-8">
@@ -15,10 +15,10 @@
       <title>Agency - Start Bootstrap Theme</title>
 
       <!-- Bootstrap Core CSS -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <%= stylesheet_link_tag "bootstrap.min.css" %>
 
       <!-- Custom CSS -->
-      <link href="css/agency.css" rel="stylesheet">
+      <%= stylesheet_link_tag "agency.css" %>
 
       <!-- Custom Fonts -->
       <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -44,21 +44,21 @@
 
 <!-- jQuery -->
 <!-- <script src="js/jquery.js"></script> -->
-<%= javascript_include_tag "assets/jquery.js" %>
+<%= javascript_include_tag "jquery.js" %>
 
 <!-- Bootstrap Core JavaScript -->
 <!-- <script src="js/bootstrap.min.js"></script> -->
-<%= javascript_include_tag "assets/bootstrap.min.js" %>
+<%= javascript_include_tag "bootstrap.min.js" %>
 
 <!-- Plugin JavaScript -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" %>
 
 <!-- <script src="js/classie.js"></script>
 <script src="js/cbpAnimatedHeader.js"></script> -->
-<%= javascript_include_tag "assets/classie.js" %>
-<%= javascript_include_tag "assets/cbpAnimatedHeader.jf" %>
+<%= javascript_include_tag "classie.js" %>
+<%= javascript_include_tag "cbpAnimatedHeader.js" %>
 <!-- Custom Theme JavaScript -->
-<%= javascript_include_tag "assets/agency.js" %>
+<%= javascript_include_tag "agency.js" %>
 </body>
 
 <%= render "partials/footer" %>
