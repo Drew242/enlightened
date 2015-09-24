@@ -7,7 +7,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'figaro'
-gem 'hurley'
+gem 'wikipedia-client'
+gem 'httparty'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'jbuilder', '~> 2.0'
@@ -25,4 +26,9 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov', :require => false
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end
