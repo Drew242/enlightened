@@ -5,9 +5,32 @@
  */
 
 body {
-    padding-top: 100px;
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.show-page {
+    padding-top: 100px;
+    height: 800px;
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url("greenLeafWithDew.jpg");
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.search-page {
+  background: rgba(255,255,255,0.8);
+  color: black;
+  overflow: scroll;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-height: 600px;
 }
 
 .text-muted {
@@ -327,20 +350,6 @@ header .intro-text .intro-heading {
         font-weight: 600;
         line-height: 75px;
     }
-}
-
-.show-page {
-    height: 800px;
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url("greenLeafWithDew.jpg");
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 section {

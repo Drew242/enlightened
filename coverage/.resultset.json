@@ -20,8 +20,13 @@
       "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/controllers/dashboard_controller.rb": [
         1,
         1,
+        1,
         null,
         1,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ],
@@ -94,6 +99,6 @@
         null
       ]
     },
-    "timestamp": 1443134361
+    "timestamp": 1443481264
   }
 }
