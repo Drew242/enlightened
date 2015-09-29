@@ -18,11 +18,7 @@
         <li class="hidden">
           <a href="/"></a>
         </li>
-        <% if current_user %>
-        <li>
-          <%= link_to "Logged in as #{current_user.name}", dashboard_path %>
-        </li>
-        <% end %>
+        <% if current_page?(controller: 'welcome', action: 'index') %>
         <li>
           <a class="page-scroll" href="#services">About</a>
         </li>
@@ -35,9 +31,14 @@
         <li>
           <a class="page-scroll" href="#team">Team</a>
         </li>
+        <% else %>
+        <% end %>
         <% if current_user %>
         <li>
           <a href="/logout">Logout</a>
+        </li>
+        <li>
+          <a href="/dashboard"><img src="<%= current_user.picture %>", class="img-rounded img-responsive inline-block"/></a>
         </li>
         <% else %>
         <li>
