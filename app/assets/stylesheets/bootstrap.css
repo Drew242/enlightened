@@ -1101,12 +1101,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #32CD32;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #32CD32;
   text-decoration: underline;
 }
 a:focus {
@@ -1312,7 +1312,7 @@ small,
 mark,
 .mark {
   padding: .2em;
-  background-color: #fcf8e3;
+  background-color: #32CD32;
 }
 .text-left {
   text-align: left;
@@ -1345,7 +1345,7 @@ mark,
   color: #337ab7;
 }
 a.text-primary:hover {
-  color: #286090;
+  color: #32CD32;
 }
 .text-success {
   color: #3c763d;
