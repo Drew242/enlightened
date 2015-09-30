@@ -5,6 +5,10 @@
         1,
         null
       ],
+      "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/helpers/articles_helper.rb": [
+        1,
+        null
+      ],
       "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/helpers/dashboard_helper.rb": [
         1,
         null
@@ -17,15 +21,16 @@
         1,
         null
       ],
-      "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/controllers/dashboard_controller.rb": [
+      "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/controllers/articles_controller.rb": [
         1,
         1,
-        1,
-        null,
-        1,
+        0,
         null,
         null,
         1,
+        0,
+        0,
+        0,
         0,
         null,
         null
@@ -40,6 +45,19 @@
         null,
         1,
         0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/controllers/dashboard_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
         null,
         null,
         1,
@@ -77,8 +95,31 @@
         null,
         null
       ],
+      "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/models/article.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/models/article_user.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/drew_conly/RubyProjects/turing_projects/3/enlightened/app/models/user.rb": [
         1,
+        1,
+        1,
+        1,
+        null,
         1,
         0,
         null,
@@ -99,6 +140,6 @@
         null
       ]
     },
-    "timestamp": 1443481264
+    "timestamp": 1443629418
   }
 }

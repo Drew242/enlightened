@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get '/logout',                  to: 'sessions#destroy'
   get '/search',                  to: 'dashboard#search'
   post '/articles/create',        to: 'articles#create'
-  resources :articles, only: [:show]
+  resources :articles, only: [:show, :update, :destroy]
 end
