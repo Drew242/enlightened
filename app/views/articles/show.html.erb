@@ -1,0 +1,13 @@
+<div class="container-fluid show-page">
+  <div class="container-fluid search-page">
+    <div class="row text-right save-article">
+    </div>
+    <h2><%= @article.title %></h2></br>
+      <a href="<%= @article.url %>"><%= @article.url %></a></br></br>
+      <div class="page-body">
+        <% @article.body.split("==").each do |segment| %>
+          <strong><p><%= segment %></p></strong></br></br>
+        <% end %>
+      </div>
+  </div>
+</div>

@@ -36,11 +36,16 @@ body {
   max-height: 70%;
 }
 
+#prof-pic {
+  height: 75px;
+}
+
 .article {
   background: rgba(255,255,255,0.8);
   color: black;
   overflow: scroll;
   height: 300px;
+  padding-top: 15px;
   margin-left: 50px;
   margin-right: 50px;
 }

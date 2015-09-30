@@ -1,13 +1,16 @@
 <div class="container-fluid show-page">
   <div class="container-fluid search-page">
     <div class="row text-right save-article">
-      <a href="">Save Article</a>
+      <%= button_to 'Save Article', controller: :articles, action: :create, :title => @page.title %>
     </div>
     <h2><%= @page.title %></h2></br>
       <a href="<%= @page.fullurl %>"><%= @page.fullurl %></a></br></br>
       <div class="page-body">
-        <% @page.text.split("==").each do |segment| %>
-          <strong><p><%= segment %></p></strong></br></br>
+        <% if @page.text %>
+          <% @page.text.split("==").each do |segment| %>
+            <strong><p><%= segment %></p></strong></br></br>
+          <% end %>
+        <% else %>
         <% end %>
       </div>
   </div>
