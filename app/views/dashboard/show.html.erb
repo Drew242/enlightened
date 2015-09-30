@@ -1,6 +1,6 @@
 <div class="container-fluid show-page">
   <div class="col-md-6-offset-2">
-    <h1>Welcome <%= current_user.name %></h1>
+    <h1>Welcome <%= current_user.name %></h1></br>
       <div class="form-inline">
           <%= form_tag("/search", method: "get") do %>
             <%= label_tag :q, "" %>
@@ -8,5 +8,27 @@
             <%= submit_tag "Search", class: 'btn btn-success' %>
           <% end %>
       </div>
-  </div>
+  </div></br></br>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>My Articles</h3>
+        <div class="article">
+          <% current_user.articles.each do |article| %>
+            <a href="">article</a>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Featured Articles</h3>
+        <div class="article">
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Article Discussions</h3>
+        <div class="article">
+
+        </div>
+      </div>
+    </div>
 </div>

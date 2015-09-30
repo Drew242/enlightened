@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'articles/create'
+
   root                            to: 'welcome#index'
   get '/dashboard',               to: 'dashboard#show'
   get '/auth/facebook/callback',  to: 'sessions#create'

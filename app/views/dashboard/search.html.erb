@@ -1,7 +1,14 @@
 <div class="container-fluid show-page">
   <div class="container-fluid search-page">
+    <div class="row text-right save-article">
+      <a href="">Save Article</a>
+    </div>
     <h2><%= @page.title %></h2></br>
       <a href="<%= @page.fullurl %>"><%= @page.fullurl %></a></br></br>
-      <p><%= @page.text %></p>
+      <div class="page-body">
+        <% @page.text.split("==").each do |segment| %>
+          <strong><p><%= segment %></p></strong></br></br>
+        <% end %>
+      </div>
   </div>
 </div>

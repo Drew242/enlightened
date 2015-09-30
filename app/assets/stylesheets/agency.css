@@ -11,7 +11,7 @@ body {
 
 .show-page {
     padding-top: 100px;
-    min-height: 700px;
+    height: 700px;
     text-align: center;
     color: #fff;
     background-attachment: scroll;
@@ -33,7 +33,22 @@ body {
   margin-right: 100px;
   margin-bottom: 100px;
   margin-top: 100px;
-  max-height: 60%;
+  max-height: 70%;
+}
+
+.article {
+  background: rgba(255,255,255,0.8);
+  color: black;
+  overflow: scroll;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.save-article {
+  padding-top: 20px;
+  padding-right: 50px;
+  font-size: 20px;
 }
 
 .text-muted {
