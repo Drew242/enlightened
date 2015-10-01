@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def show
-    @article  = current_user.articles.find(params[:id])
+    @article  = Article.find(params[:id])
   end
 
   def create
@@ -19,7 +19,13 @@ class ArticlesController < ApplicationController
 
   def destroy
     article = Article.find(params[:id])
-    article.destroy
+    if current_user.articles.include?(article)
+      article.destroy
+      redirect_to dashboard_path
+    else
+      flash[:error] = "That wasn't your article"
     redirect_to dashboard_path
+    end
   end
+
 end

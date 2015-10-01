@@ -1,11 +1,10 @@
 class User < ActiveRecord::Base
   has_many :comments
   has_many :article_users
-  has_many :articles, through: :article_users
+  has_many :articles, through: :article_users, dependent: :destroy
 
   def self.find_or_create_from_auth(data)
     user = User.find_or_create_by(provider: data.provider, uid: data.uid)
-
     user.name     = data.info.name
     user.provider = data.provider
     user.uid      = data.uid

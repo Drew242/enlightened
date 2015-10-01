@@ -24,7 +24,7 @@
             </p>
             <% end %>
             <% @article.comments.each do |comment| %>
-            <p><%= comment.body %></p>
+            <p>"<%= comment.body %>"</br>-<%= current_user.name %></p>
             <% end %>
       </div>
   </div>
