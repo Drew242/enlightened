@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
       article.destroy
       redirect_to dashboard_path
     else
-      flash[:error] = "That wasn't your article"
+      # flash[:error] = "That wasn't your article"
     redirect_to dashboard_path
     end
   end
